@@ -26,6 +26,7 @@ jobs:
 
     - name: Build debug apk
       run: ./gradlew clean assembleDebug
+
     - name : Release
       uses: actions/upload-artifact@v1
         with:
