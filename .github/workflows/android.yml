@@ -29,6 +29,6 @@ jobs:
 
     - name: Upload
       uses: actions/upload-artifact@v2
-        with:
+      with:
           name: Build Artifacts
           path: app/build/outputs/
