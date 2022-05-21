@@ -27,9 +27,8 @@ jobs:
     - name: Build debug apk
       run: ./gradlew clean assembleRelease
 
-    - name: Upload APK
+    - name: Upload
       uses: actions/upload-artifact@v2
-      with:
-          name: App
-          path: ${{ github.workspace}} /app/build/outputs/apk/release/app-release.apk
-      
+        with:
+          name: Build Artifacts
+          path: app/build/outputs/
