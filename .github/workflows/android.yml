@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
 
     steps:
@@ -25,10 +25,10 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build debug apk
-      run: ./gradlew clean assembleDebug
+      run: ./gradlew clean assembleRelease
 
     - name : Release
-      uses: actions/upload-artifact@v1
-        with:
+      uses: actions/upload-artifact@v2
+      with:
           name: release-apk
           path: build/app/outputs/apk/release/app-release.apk
