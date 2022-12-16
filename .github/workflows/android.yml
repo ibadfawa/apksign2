@@ -1,4 +1,4 @@
-name: Badifa CI
+name: Badifa CI rerun
 
 on:
   push:
